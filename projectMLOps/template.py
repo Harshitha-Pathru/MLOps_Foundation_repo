@@ -37,6 +37,7 @@ listOfFiles= [
     "tox.ini",
     "experiment/experiments.ipynb"
 ]
+print(listOfFiles)
 
 for filepath in listOfFiles:
     filepath= Path(filepath)
