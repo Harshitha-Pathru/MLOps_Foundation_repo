@@ -10,24 +10,29 @@ Basic files required for every project, here we can automate the  files creation
 To maintain pipeline i.e; training and prediction pipelines(stages)in where several components required, those are listed down below.
 src>pipeline=mutilple components
 '''
-
+package_name="mongodb_connect"
 listOfFiles= [
     ".github/workflows/.gitkeep",
     "src/__init__.py",
+    f"src/{package_name}/__init__.py",
+    f"src/{package_name}/mongo_crud.py",
     "src/components/__init__.py",
-    "src/components/data_ingestion.py",\
+    "src/components/data_ingestion.py",
     "src/components/data_transformation.py",
-    "src/components/model_trainer.py"
+    "src/components/model_trainer.py",
     "src/components/model_evaluation.py",
     "src/pipeline/__init__.py",
     "src/pipeline/training_pipeline.py",
     "src/pipeline/prediction_pipeline.py",
     "src/logger/logging.py",
-    "src/exception/exception",
+    "src/exception/exception.py",
     "src/utils/__init__.py",
     "src/utils/utils.py",
+    "tests/__init__.py",
     "tests/unit/__init__.py",
+    "tests/unit/unit.py",
     "tests/integration/__init__.py",
+    "tests/integration/int.py",
     "init_setup.sh",
     "requirements.txt",
     "requirements_dev.txt",
